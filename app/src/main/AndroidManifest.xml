@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.go_jobs">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Go_Jobs">
+        <activity
+            android:name=".NewCategory"
+            android:exported="false" />
+        <activity
+            android:name=".PostJob"
+            android:exported="false" />
+        <activity
+            android:name=".Job_Apply"
+            android:exported="false" />
+        <activity
+            android:name=".job_description"
+            android:exported="false" />
+        <activity
+            android:name=".Applicants"
+            android:exported="false" />
+        <activity
+            android:name=".MyJobs"
+            android:exported="false" />
+        <activity
+            android:name=".jobs"
+            android:exported="false" />
+        <activity
+            android:name=".setting"
+            android:exported="false" />
+        <activity
+            android:name=".Message"
+            android:exported="false" />
+        <activity
+            android:name=".Register"
+            android:exported="false"
+            android:parentActivityName=".Login" />
+        <activity
+            android:name=".Home_screen"
+            android:exported="false"
+            android:parentActivityName=".Login" />
+        <activity
+            android:name=".Login"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

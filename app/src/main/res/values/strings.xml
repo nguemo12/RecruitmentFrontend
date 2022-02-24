@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Go_Jobs</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="login_page">Login Page</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="hello_welcome_to_xpress_job_the_only_way_to_get_your_dream_job_easily">hello welcome to xpress job the only way to get your dream job easily</string>
+    <string name="register">Register</string>
+    <string name="confpass">Confirm Password</string>
+    <string name="email">Email</string>
+    <string name="title_activity_home_screen">Home_screen</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Profile</string>
+    <string name="title_notifications">Notifications</string>
+</resources>

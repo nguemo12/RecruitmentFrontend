@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Nguemo Aymard/AndroidStudioProjects/Go_Jobs/app/src/main/res/drawable/ic_baseline_view_headline_24.xml" value="0.2115" />
+        <entry key="..\:/Users/Nguemo Aymard/AndroidStudioProjects/Go_Jobs/app/src/main/res/drawable/round_corners.xml" value="0.1" />
+        <entry key="..\:/Users/Nguemo Aymard/AndroidStudioProjects/Go_Jobs/app/src/main/res/layout/activity_applicants.xml" value="0.1" />
+        <entry key="..\:/Users/Nguemo Aymard/AndroidStudioProjects/Go_Jobs/app/src/main/res/layout/activity_home.xml" value="0.10648148148148148" />
+        <entry key="..\:/Users/Nguemo Aymard/AndroidStudioProjects/Go_Jobs/app/src/main/res/layout/activity_home_screen.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Nguemo Aymard/AndroidStudioProjects/Go_Jobs/app/src/main/res/layout/activity_job_apply.xml" value="0.1" />
+        <entry key="..\:/Users/Nguemo Aymard/AndroidStudioProjects/Go_Jobs/app/src/main/res/layout/activity_job_description.xml" value="0.1" />
+        <entry key="..\:/Users/Nguemo Aymard/AndroidStudioProjects/Go_Jobs/app/src/main/res/layout/activity_jobs.xml" value="0.1" />
+        <entry key="..\:/Users/Nguemo Aymard/AndroidStudioProjects/Go_Jobs/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Nguemo Aymard/AndroidStudioProjects/Go_Jobs/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Nguemo Aymard/AndroidStudioProjects/Go_Jobs/app/src/main/res/layout/activity_my_jobs.xml" value="0.1" />
+        <entry key="..\:/Users/Nguemo Aymard/AndroidStudioProjects/Go_Jobs/app/src/main/res/layout/activity_new_category.xml" value="0.1" />
+        <entry key="..\:/Users/Nguemo Aymard/AndroidStudioProjects/Go_Jobs/app/src/main/res/layout/activity_post_job.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Nguemo Aymard/AndroidStudioProjects/Go_Jobs/app/src/main/res/layout/activity_register.xml" value="0.10648148148148148" />
+        <entry key="..\:/Users/Nguemo Aymard/AndroidStudioProjects/Go_Jobs/app/src/main/res/layout/fragment_dashboard.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Nguemo Aymard/AndroidStudioProjects/Go_Jobs/app/src/main/res/layout/fragment_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Nguemo Aymard/AndroidStudioProjects/Go_Jobs/app/src/main/res/layout/fragment_notifications.xml" value="0.1" />
+        <entry key="..\:/Users/Nguemo Aymard/AndroidStudioProjects/Go_Jobs/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
+        <entry key="..\:/Users/Nguemo Aymard/AndroidStudioProjects/Go_Jobs/app/src/main/res/menu/menu_main.xml" value="0.20416666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
