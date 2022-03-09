@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class Login extends AppCompatActivity {
-    Button btn1, btn2;
+    Button  btn2;
     TextView text1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

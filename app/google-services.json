@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "647668572833",
+    "project_id": "go-jobs-3d56c",
+    "storage_bucket": "go-jobs-3d56c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:647668572833:android:e525a2cef40743849406e0",
+        "android_client_info": {
+          "package_name": "com.example.go_jobs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "647668572833-mua0jd5afekr4aiucr4o9g4qg4s9ka5i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCc-EtsuuBMJQYVPXAxLPfYPH_7J1yS2Jo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "647668572833-mua0jd5afekr4aiucr4o9g4qg4s9ka5i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

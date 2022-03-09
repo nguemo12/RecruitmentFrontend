@@ -8,7 +8,9 @@ import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.view.menu.MenuBuilder;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -26,6 +28,8 @@ public class Home_screen extends AppCompatActivity {
 
         binding = ActivityHomeScreenBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+
 
         BottomNavigationView navView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
@@ -46,7 +50,7 @@ public class Home_screen extends AppCompatActivity {
     public  boolean onOptionsItemSelected(MenuItem menuItem){
         switch (menuItem.getItemId()){
             case R.id.chat:
-                Intent intent= new Intent(getApplicationContext(),Message.class);
+                Intent intent= new Intent(getApplicationContext(),interview.class);
                 startActivity(intent);
                 return true;
             case R.id.settings:
@@ -57,10 +61,6 @@ public class Home_screen extends AppCompatActivity {
             case R.id.joboffer:
                 Intent intent3 = new Intent(getApplicationContext(),jobs.class);
                 startActivity(intent3);
-                return true;
-            case R.id.post:
-                Intent intent4 =new Intent(getApplicationContext(),MyJobs.class);
-                startActivity(intent4);
                 return true;
             case  R.id.logout:
                 Intent intent2 =new Intent(getApplicationContext(),Login.class);

@@ -12,7 +12,7 @@ import android.widget.ImageView;
 import android.widget.ViewSwitcher;
 
 public class MainActivity extends AppCompatActivity {
-    private static final int[] Images={R.drawable.interview,R.drawable.work, R.drawable.table};
+    private static final int[] Images={R.drawable.jobonline,R.drawable.search, R.drawable.vacancy,R.drawable.trone};
     private int position = -1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
                 if (position<Images.length-1){
                     position +=1;
                     imageSwitcher.setBackgroundResource(Images[position]);
-                    if (position==2){
+                    if (position==3){
                         Intent intent = new Intent(getApplicationContext(),Login.class);
                         startActivity(intent);
                     }
