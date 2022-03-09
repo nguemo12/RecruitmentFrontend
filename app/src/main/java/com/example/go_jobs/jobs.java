@@ -16,7 +16,6 @@ TextView job;
 
         job= findViewById(R.id.jobadd);
 
-
         job.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
