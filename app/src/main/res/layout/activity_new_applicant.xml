@@ -70,6 +70,7 @@
             android:textColor="@color/black"
             android:textColorHint="@color/black"
             android:textSize="15sp"
+            android:text="Nguh Prince"
             android:id="@+id/ApplicantName"
             android:layout_marginHorizontal="10dp"
             android:autofillHints="no"
@@ -94,6 +95,7 @@
             android:layout_marginHorizontal="10dp"
             android:autofillHints="no"
             android:inputType="textPersonName"
+            android:text="Yaounde"
             tools:ignore="LabelFor"
             android:id="@+id/ApplicantCity"/>
         <TextView
@@ -111,6 +113,7 @@
             android:textColor="@color/black"
             android:textColorHint="@color/black"
             android:textSize="15sp"
+            android:text="Cameroon"
             android:layout_marginHorizontal="10dp"
             android:autofillHints="no"
             android:inputType="textPersonName"
@@ -134,6 +137,7 @@
             android:textSize="15sp"
             android:layout_marginHorizontal="10dp"
             android:autofillHints="no"
+            android:text="example@gmail.com"
             android:inputType="textEmailAddress"
             tools:ignore="LabelFor" />
         <TextView
@@ -152,6 +156,7 @@
             android:textColorHint="@color/black"
             android:textSize="15sp"
             android:layout_marginHorizontal="10dp"
+            android:text="85939859398"
             android:autofillHints="no"
             android:inputType="phone"
             tools:ignore="LabelFor"
@@ -168,9 +173,10 @@
         android:layout_marginHorizontal="25sp"/>
 
     <EditText
-        android:id="@+id/createApplicantpassword"
+        android:id="@+id/ApplicantPassword"
         android:layout_width="300dp"
         android:layout_height="30dp"
+        android:text="password"
         android:layout_marginHorizontal="10sp"
         android:drawableStart="@drawable/ic_baseline_vpn_key_24"
         android:inputType="textPassword"
@@ -188,9 +194,10 @@
         android:layout_marginHorizontal="10sp"/>
 
     <EditText
-        android:id="@+id/appliantpassword"
+        android:id="@+id/ApplicantConfirmPassword"
         android:layout_width="300dp"
         android:layout_height="30dp"
+        android:text="password"
         android:layout_marginHorizontal="25sp"
         android:drawableStart="@drawable/ic_baseline_vpn_key_24"
         android:inputType="textPassword"

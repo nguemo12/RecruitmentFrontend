@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".jobs">
 
     <TextView
@@ -16,5 +17,9 @@
         android:layout_marginHorizontal="30dp"
         android:textSize="15sp"
         android:id="@+id/jobadd"/>
-
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/offersList"
+        />
 </LinearLayout>

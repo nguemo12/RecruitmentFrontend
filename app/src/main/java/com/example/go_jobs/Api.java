@@ -10,7 +10,7 @@ public class Api {
     public static String SERVER_URL = "192.168.1.186";
     public static String SERVER_PORT = "14484";
     public static String APP_NAME = "/RecruitmentPlatformBackend";
-    public static String API_ROOT = "/webresources";
+    public static String API_ROOT = "/webresources/";
     static Retrofit getClient() {
         OkHttpClient client = new OkHttpClient.Builder().build();
 
