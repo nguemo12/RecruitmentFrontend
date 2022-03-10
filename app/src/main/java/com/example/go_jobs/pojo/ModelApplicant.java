@@ -1,15 +1,18 @@
 package com.example.go_jobs.pojo;
 
+import java.sql.Timestamp;
+
 public class ModelApplicant {
     private int applicantid;
     private String name;
     private String email;
     private String password;
-    private String dob;
+    private Timestamp dob;
     private String status;
     private String city;
     private String country;
     private String phone;
+    private String ApplicantImage;
 
     public int getApplicantid() {
         return applicantid;
@@ -43,12 +46,20 @@ public class ModelApplicant {
         this.password = password;
     }
 
-    public String getDob() {
+    public Timestamp getDob() {
         return dob;
     }
 
-    public void setDob(String dob) {
+    public void setDob(Timestamp dob) {
         this.dob = dob;
+    }
+
+    public String getApplicantImage() {
+        return ApplicantImage;
+    }
+
+    public void setApplicantImage(String applicantImage) {
+        ApplicantImage = applicantImage;
     }
 
     public String getStatus() {

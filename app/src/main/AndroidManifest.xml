@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.go_jobs">
+    package="com.example.go_jobs" >
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -11,7 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Go_Jobs"
-        android:usesCleartextTraffic="true">
+        android:usesCleartextTraffic="true" >
+        <activity
+            android:name=".CategoryList"
+            android:exported="false" />
+        <activity
+            android:name=".NewCategory"
+            android:exported="false"
+            android:label="New Category" />
         <activity
             android:name=".ApplicationList"
             android:exported="false" />
@@ -65,7 +72,7 @@
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -62,6 +62,10 @@ public class Home_screen extends AppCompatActivity {
                 Intent intent3 = new Intent(getApplicationContext(),jobs.class);
                 startActivity(intent3);
                 return true;
+            case R.id.catlist:
+                Intent intent9 = new Intent(getApplicationContext(),CategoryList.class);
+                startActivity(intent9);
+                return true;
             case  R.id.logout:
                 Intent intent2 =new Intent(getApplicationContext(),Login.class);
                 Toast.makeText(this,"Logout successful",Toast.LENGTH_SHORT).show();

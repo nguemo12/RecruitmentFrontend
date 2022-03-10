@@ -125,7 +125,7 @@
 
         android:layout_gravity="center">
         <TextView
-            android:id="@+id/Chooseimage"
+            android:id="@+id/Chooseimagecv"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:gravity="center"

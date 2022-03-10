@@ -3,10 +3,13 @@ package com.example.go_jobs.pojo;
 public class ModelOffer {
     private int jobofferid;
     private int companyid;
+    private int applicantid;
     private String offername;
     private String description;
     private String status;
     private String jobofferimage;
+    private String jobsalary;
+    private String jobtype;
 
     public ModelOffer() {
 
@@ -22,6 +25,30 @@ public class ModelOffer {
 
     public int getCompanyid() {
         return companyid;
+    }
+
+    public int getApplicantid() {
+        return applicantid;
+    }
+
+    public void setApplicantid(int applicantid) {
+        this.applicantid = applicantid;
+    }
+
+    public String getJobsalary() {
+        return jobsalary;
+    }
+
+    public void setJobsalary(String jobsalary) {
+        this.jobsalary = jobsalary;
+    }
+
+    public String getJobtype() {
+        return jobtype;
+    }
+
+    public void setJobtype(String jobtype) {
+        this.jobtype = jobtype;
     }
 
     public void setCompanyid(int companyid) {

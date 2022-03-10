@@ -142,7 +142,7 @@
         android:autofillHints="no"
         android:inputType="textPersonName"
         tools:ignore="LabelFor"
-        android:id="@+id/MinSalary"/>
+        android:id="@+id/JobType"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

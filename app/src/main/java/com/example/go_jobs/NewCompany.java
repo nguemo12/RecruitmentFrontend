@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.DownloadManager;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -18,16 +19,24 @@ import com.android.volley.RequestQueue;
 
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.go_jobs.pojo.ModelApplicant;
+import com.example.go_jobs.pojo.ModelCompany;
 
 import java.io.Reader;
 import java.io.StringReader;
 import java.util.HashMap;
 import java.util.Map;
 
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+
 public class NewCompany extends AppCompatActivity {
     Button btn1;
     TextView text1;
     EditText et, et1, et3, et4;
+    ApiInterface apiInterface1;
+    private ModelCompany newCompany = new ModelCompany();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,26 +47,51 @@ public class NewCompany extends AppCompatActivity {
         et=findViewById(R.id.CompanyName);
         et1=findViewById(R.id.Companypassword);
         et3=findViewById(R.id.CompanyEmail);
-
+        et4 =findViewById(R.id.createCompanypassword);
+        apiInterface1 = Api.getClient().create(ApiInterface.class);
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-            String url="http://localhost:14484/RecruitmentPlatformBackend/webresources/companycontroller/company";
-               StringRequest stringRequest = new StringRequest(Request.Method.POST,url, response -> {Toast.makeText(getApplicationContext(),"success", Toast.LENGTH_LONG).show();},
-                      error->Toast.makeText(getApplicationContext(),"Error",Toast.LENGTH_LONG).show()){
-                   @Override
-                    protected Map<String, String> getParams() throws AuthFailureError {
-                      Map<String, String>params = new HashMap<>();
-                      params.put("CompanyName",et.getText().toString());
-                      params.put("CompanyEmail",et3.getText().toString());
-                      params.put("CompanyPassword",et1.getText().toString());
-                      return params;
+            Log.v("DEBUG","Clicked on add Button");
+            new Runnable(){
+                @Override
+                public void run() {
+                    newCompany.setCompanyname(et.getText().toString());
+                    newCompany.setCompanyemail(et3.getText().toString());
+
+                    String password = et1.getText().toString(), ConfirmPassword = et4.getText().toString();
+
+
+                    if (password.equals(ConfirmPassword) && !password.equals("")) {
+                        newCompany.setCompanypassword(password);
+                        Log.v("DEBUG", "URL: " + ApiInterface.ADD_COMPANY_URL);
+                        Call<ModelCompany> addCompanyCall = apiInterface1.addCompany(newCompany);
+                        addCompanyCall.enqueue(new Callback<ModelCompany>() {
+                            @Override
+                            public void onResponse(Call<ModelCompany> call, Response<ModelCompany> response) {
+                                if (response.isSuccessful()) {
+                                    Toast.makeText(getBaseContext(), "Company added successfully", Toast.LENGTH_SHORT).show();
+                                    Intent intent = new Intent(getApplicationContext(),Login.class);
+                                    startActivity(intent);
+                                }
+                                else {
+                                    Toast.makeText(getBaseContext(), "Error connecting to the server", Toast.LENGTH_LONG).show();
+                                }
+                            }
+
+                            @Override
+                            public void onFailure(Call<ModelCompany> call, Throwable t) {
+                                Log.v("DEBUG", "Message: " + t.toString());
+                                Toast.makeText(getBaseContext(), "Request failed", Toast.LENGTH_LONG).show();
+                            }
+
+                        });
+                    } else {
+                        Toast.makeText(getApplicationContext(), "The two passwords must be the same and cannot be empty", Toast.LENGTH_LONG).show();
                     }
-                };
-               RequestQueue queue = Volley.newRequestQueue(getApplicationContext());
-              // RequestQueue.add(stringRequest);
-                Intent intent = new Intent(getApplicationContext(),Login.class);
-                startActivity(intent);
+                }
+               // Call<>
+            }.run();
             }
         });
 
