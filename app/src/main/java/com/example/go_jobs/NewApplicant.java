@@ -60,7 +60,7 @@ public class NewApplicant extends AppCompatActivity {
 
                         if (password.equals(confirmPassword) && !password.equals("")) {
                             newApplicant.setPassword(password);
-
+                            Log.v("DEBUG", "URL: " + ApiInterface.ADD_APPLICANT_URL);
                             Call<ModelApplicant> addApplicantCall = apiInterface.addApplicant(newApplicant);
                             addApplicantCall.enqueue(new Callback<ModelApplicant>() {
                                 @Override
@@ -77,6 +77,7 @@ public class NewApplicant extends AppCompatActivity {
 
                                 @Override
                                 public void onFailure(Call<ModelApplicant> call, Throwable t) {
+                                    Log.v("DEBUG", "Message: " + t.toString());
                                     Toast.makeText(getBaseContext(), "Request failed", Toast.LENGTH_LONG).show();
                                 }
                             });

@@ -11,15 +11,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Job Offer Information"
-        android:textColor="@color/black"
-        android:layout_marginVertical="10dp"
-        android:layout_marginHorizontal="70dp"
-        android:textSize="25sp"
-        android:textStyle="bold"/>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -68,7 +60,7 @@
         android:textStyle="bold"/>
     <EditText
         android:layout_width="400dp"
-        android:layout_height="30dp"
+        android:layout_height="wrap_content"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
         android:textSize="15sp"
@@ -77,26 +69,22 @@
         android:autofillHints="no"
         android:inputType="textPersonName"
         tools:ignore="LabelFor" />
-    <TextView
-        android:layout_width="wrap_content"
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Enter Job Category"
-        android:textColor="@color/black"
-        android:layout_marginVertical="10dp"
-        android:layout_marginHorizontal="10dp"
-        android:textSize="15sp"
-        android:textStyle="bold"/>
-    <EditText
-        android:layout_width="400dp"
-        android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:textColorHint="@color/black"
-        android:textSize="15sp"
-        android:id="@+id/JobCategory"
-        android:layout_marginHorizontal="10dp"
-        android:autofillHints="no"
-        android:inputType="textPersonName"
-        tools:ignore="LabelFor" />
+        android:layout_margin="16dp"
+        android:hint="Select Job Category"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:id="@+id/autoMyCompleteView"
+            tools:ignore="LabelFor" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -121,6 +109,7 @@
         android:layout_marginVertical="10dp"
         android:layout_marginHorizontal="10dp"
         android:textSize="15sp"
+        android:layout_margin="16dp"
         android:textStyle="bold"/>
     <EditText
         android:layout_width="400dp"
@@ -128,6 +117,7 @@
         android:textColor="@color/black"
         android:textColorHint="@color/black"
         android:textSize="15sp"
+        android:layout_margin="16dp"
         android:id="@+id/JobDescription"
         android:layout_marginHorizontal="10dp"
         android:autofillHints="no"
@@ -143,8 +133,8 @@
         android:textSize="15sp"
         android:textStyle="bold"/>
     <EditText
-        android:layout_width="300dp"
-        android:layout_height="30dp"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
         android:textSize="15sp"
@@ -163,8 +153,8 @@
         android:textSize="15sp"
         android:textStyle="bold"/>
     <EditText
-        android:layout_width="300dp"
-        android:layout_height="30dp"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
         android:textSize="15sp"
@@ -183,8 +173,8 @@
         android:textSize="15sp"
         android:textStyle="bold"/>
     <EditText
-        android:layout_width="300dp"
-        android:layout_height="30dp"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
         android:textSize="15sp"

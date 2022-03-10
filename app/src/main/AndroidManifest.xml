@@ -10,7 +10,11 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Go_Jobs">
+        android:theme="@style/Theme.Go_Jobs"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".ApplicationList"
+            android:exported="false" />
         <activity
             android:name=".ApplicantList"
             android:exported="false" />
@@ -19,14 +23,16 @@
             android:exported="false" />
         <activity
             android:name=".NewApplicant"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Applicant Register" />
         <activity
             android:name=".NewCompany"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Company Register" />
         <activity
             android:name=".PostJob"
             android:exported="false"
-            android:label="Add new Job" />
+            android:label="Add new Offer" />
         <activity
             android:name=".jobs"
             android:exported="false" />

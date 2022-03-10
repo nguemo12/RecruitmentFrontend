@@ -1,11 +1,14 @@
 package com.example.go_jobs;
 
+import android.util.Log;
+
 import com.example.go_jobs.pojo.ModelApplicant;
 import com.example.go_jobs.pojo.ModelOffer;
 
 import java.util.ArrayList;
 
 import retrofit2.Call;
+import retrofit2.http.Body;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
 
@@ -21,7 +24,6 @@ public interface ApiInterface {
 
     @GET(GET_ALL_OFFERS_URL)
     Call<ArrayList<ModelOffer>> getAllOffers();
-
     @POST(ADD_APPLICANT_URL)
-    Call<ModelApplicant> addApplicant(ModelApplicant applicant);
+    Call<ModelApplicant> addApplicant(@Body ModelApplicant applicant);
 }
