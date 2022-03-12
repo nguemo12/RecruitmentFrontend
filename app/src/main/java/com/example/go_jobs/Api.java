@@ -7,7 +7,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class Api {
     private static Retrofit retrofit;
     public static String PROTOCOL = "http://";
-    public static String SERVER_URL = "192.168.1.186";
+    public static String SERVER_URL = "192.168.43.67";
     public static String SERVER_PORT = "14484";
     public static String APP_NAME = "/RecruitmentPlatformBackend";
     public static String API_ROOT = "/webresources/";

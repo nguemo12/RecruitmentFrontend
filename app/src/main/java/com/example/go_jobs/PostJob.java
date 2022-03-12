@@ -43,7 +43,6 @@ Button addoffer;
                 Log.v("DEBUG","Clicked on add btn");
 
                 new Runnable(){
-
                     @Override
                     public void run() {
                         newOffer.setOffername(Offername.getText().toString());

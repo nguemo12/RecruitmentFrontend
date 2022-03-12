@@ -12,7 +12,7 @@ import android.widget.ImageView;
 import android.widget.ViewSwitcher;
 
 public class MainActivity extends AppCompatActivity {
-    private static final int[] Images={R.drawable.jobonline,R.drawable.search, R.drawable.vacancy,R.drawable.trone};
+    private static final int[] Images={R.drawable.jobonline,R.drawable.jobbing, R.drawable.vacancy,R.drawable.searchview};
     private int position = -1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

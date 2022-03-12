@@ -34,7 +34,7 @@ import retrofit2.Response;
 public class NewCompany extends AppCompatActivity {
     Button btn1;
     TextView text1;
-    EditText et, et1, et3, et4;
+    EditText et, et1, et3, et4,et2,et5, et6,et7;
     ApiInterface apiInterface1;
     private ModelCompany newCompany = new ModelCompany();
     @Override
@@ -47,6 +47,10 @@ public class NewCompany extends AppCompatActivity {
         et=findViewById(R.id.CompanyName);
         et1=findViewById(R.id.Companypassword);
         et3=findViewById(R.id.CompanyEmail);
+        et2 = findViewById(R.id.CompanyPhone);
+                et5 =findViewById(R.id.CompanyDescription);
+                et6= findViewById(R.id.CompanyCountry);
+
         et4 =findViewById(R.id.createCompanypassword);
         apiInterface1 = Api.getClient().create(ApiInterface.class);
         btn1.setOnClickListener(new View.OnClickListener() {
@@ -58,6 +62,9 @@ public class NewCompany extends AppCompatActivity {
                 public void run() {
                     newCompany.setCompanyname(et.getText().toString());
                     newCompany.setCompanyemail(et3.getText().toString());
+                    newCompany.setCompanyphone(et2.getText().toString());
+                    newCompany.setCompanydescription(et5.getText().toString());
+                    newCompany.setCompanycountry(et6.getText().toString());
 
                     String password = et1.getText().toString(), ConfirmPassword = et4.getText().toString();
 

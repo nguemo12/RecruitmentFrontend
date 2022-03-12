@@ -2,8 +2,8 @@ package com.example.go_jobs.pojo;
 
 public class ModelOffer {
     private int jobofferid;
-    private int companyid;
-    private int applicantid;
+    private ModelCompany companyid;
+    private ModelApplicant applicantid;
     private String offername;
     private String description;
     private String status;
@@ -23,15 +23,19 @@ public class ModelOffer {
         this.jobofferid = jobofferid;
     }
 
-    public int getCompanyid() {
+    public ModelCompany getCompanyid() {
         return companyid;
     }
 
-    public int getApplicantid() {
+    public void setCompanyid(ModelCompany companyid) {
+        this.companyid = companyid;
+    }
+
+    public ModelApplicant getApplicantid() {
         return applicantid;
     }
 
-    public void setApplicantid(int applicantid) {
+    public void setApplicantid(ModelApplicant applicantid) {
         this.applicantid = applicantid;
     }
 
@@ -51,9 +55,7 @@ public class ModelOffer {
         this.jobtype = jobtype;
     }
 
-    public void setCompanyid(int companyid) {
-        this.companyid = companyid;
-    }
+
 
     public String getOffername() {
         return offername;
